@@ -30,12 +30,12 @@ From solving complex <strong>CTF challenges on TryHackMe</strong> to architectin
 
 <table>
 <tr>
-<td><strong>Offensive Sec &amp; CTF</strong><br><sub>TryHackMe · Nmap · BurpSuite · Metasploit · AppSec</sub></td>
-<td><strong>Network Defense &amp; Forensics</strong><br><sub>CCNA · Wireshark · Packet Inspection · Routing &amp; Switching</sub></td>
+<td><strong>Offensive Sec &amp; Exploitation</strong><br><sub>Kali Linux · Metasploit · Burp Suite · Hydra · John the Ripper</sub></td>
+<td><strong>Reverse Engineering &amp; Scanning</strong><br><sub>Ghidra · Nessus · Nmap · Hashcat · CVE Analysis</sub></td>
 </tr>
 <tr>
-<td><strong>Cloud &amp; Sandboxing</strong><br><sub>Docker · Linux Administration · GCloud · Microservices</sub></td>
-<td><strong>Software &amp; Cryptography</strong><br><sub>Python · Java · Bash · Entropy Analysis · NLP</sub></td>
+<td><strong>Network Defense &amp; SOC</strong><br><sub>Wireshark · Wazuh SIEM · Suricata/Snort · CCNA Routing</sub></td>
+<td><strong>Tooling &amp; Sandboxing</strong><br><sub>Python 3 · Docker · Linux/Bash · Microservices</sub></td>
 </tr>
 </table>
 
