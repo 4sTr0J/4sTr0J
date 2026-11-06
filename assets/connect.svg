@@ -16,25 +16,25 @@
   </style>
   <defs>
     <linearGradient id="bg" x1="0" x2="1">
-      <stop offset="0" stop-color="#0b1220"/><stop offset=".5" stop-color="#101a2c"/><stop offset="1" stop-color="#1a1208"/>
+      <stop offset="0" stop-color="#020508"/><stop offset=".5" stop-color="#050e14"/><stop offset="1" stop-color="#03080e"/>
     </linearGradient>
-    <linearGradient id="title" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#F7941D"/></linearGradient>
+    <linearGradient id="title" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#00ff66"/></linearGradient>
     <linearGradient id="sh" x1="0" x2="1">
-      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#00ff66" stop-opacity="0"/><stop offset=".5" stop-color="#00ff66" stop-opacity=".08"/><stop offset="1" stop-color="#00ff66" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="frame"><rect width="1600" height="500" rx="36"/></clipPath>
   </defs>
   <g clip-path="url(#frame)">
     <rect width="1600" height="500" fill="url(#bg)"/>
-    <path class="w1" d="M0 400 C300 340 500 460 800 400 S1300 340 1600 400 V520 H0Z" fill="#1E90FF" fill-opacity=".14"/>
-    <path class="w2" d="M0 430 C260 470 560 370 860 430 S1360 470 1600 420 V520 H0Z" fill="#F7941D" fill-opacity=".14"/>
+    <path class="w1" d="M0 400 C300 340 500 460 800 400 S1300 340 1600 400 V520 H0Z" fill="#00e5ff" fill-opacity=".15"/>
+    <path class="w2" d="M0 430 C260 470 560 370 860 430 S1360 470 1600 420 V520 H0Z" fill="#00ff66" fill-opacity=".15"/>
     <rect class="shine" x="0" y="0" width="600" height="500" fill="url(#sh)"/>
 
-    <text class="mono a1" x="800" y="120" text-anchor="middle" font-size="20" fill="#F7941D" letter-spacing="6">// 04 — LET'S CONNECT</text>
-    <text class="sans a2" x="800" y="215" text-anchor="middle" font-size="76" font-weight="800" fill="url(#title)" letter-spacing="-2">Let's build something secure &amp; great.</text>
-    <text class="mono a3" x="800" y="290" text-anchor="middle" font-size="26" fill="#e6e9f0">$ nadilx007@gmail.com<tspan class="cursor" fill="#F7941D"> ▍</tspan></text>
-    <text class="sans a3" x="800" y="340" text-anchor="middle" font-size="20" fill="#8b93a7">Cyber Security · Network Engineering · Full-Stack Development — Sri Lanka, working worldwide</text>
+    <text class="mono a1" x="800" y="120" text-anchor="middle" font-size="20" fill="#00ff66" letter-spacing="6">// 0x04 — ESTABLISH_CONNECTION</text>
+    <text class="sans a2" x="800" y="215" text-anchor="middle" font-size="76" font-weight="800" fill="url(#title)" letter-spacing="-2">Let's secure &amp; build the future.</text>
+    <text class="mono a3" x="800" y="290" text-anchor="middle" font-size="26" fill="#e6f5ee">root@4sTr0J:~# ssh connect@nadilx007<tspan class="cursor" fill="#00ff66"> ▍</tspan></text>
+    <text class="sans a3" x="800" y="340" text-anchor="middle" font-size="20" fill="#80a095">Cyber Security · Network Defense · Full-Stack Development — Sri Lanka, working worldwide</text>
 
-    <rect x="1" y="1" width="1598" height="498" rx="36" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+    <rect x="1" y="1" width="1598" height="498" rx="36" fill="none" stroke="#00ff66" stroke-opacity=".18" stroke-width="2"/>
   </g>
 </svg>
