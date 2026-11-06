@@ -164,8 +164,7 @@ From solving complex <strong>CTF challenges on TryHackMe</strong> to architectin
 </p>
 
 <p align="center">
-  <a href="https://github.com/4sTr0J"><img src="https://img.shields.io/badge/Terminal-4sTr0J-020508?style=for-the-badge&logo=github&logoColor=00ff66" alt="GitHub" /></a>
-  <a href="mailto:nadilx007@gmail.com"><img src="https://img.shields.io/badge/Secure_Mail-nadilx007%40gmail.com-00e5ff?style=for-the-badge&logo=gmail&logoColor=black" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/nadil-kularathne/"><img src="https://img.shields.io/badge/Network-Nadil%20Kularathne-00ff66?style=for-the-badge&logo=linkedin&logoColor=black" alt="LinkedIn" /></a>
-  <a href="https://tryhackme.com/p/4sTr0J"><img src="https://img.shields.io/badge/TryHackMe-4sTr0J-212C42?style=for-the-badge&logo=tryhackme&logoColor=00ff66" alt="TryHackMe" /></a>
+  <a href="mailto:nadilx007@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/nadil-kularathne/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://tryhackme.com/p/4sTr0J"><img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=red" alt="TryHackMe" /></a>
 </p>
