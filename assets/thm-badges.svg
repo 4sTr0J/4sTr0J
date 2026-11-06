@@ -2,17 +2,17 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
     .sans { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
     @keyframes sweep { from { transform: translateX(-1600px); } to { transform: translateX(1600px); } }
     @keyframes borderGlowG { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
     @keyframes borderGlowC { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
     @keyframes borderGlowR { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .9; } }
     
-    .c1 { animation: rise .6s ease-out .1s both; }
-    .c2 { animation: rise .6s ease-out .25s both; }
-    .c3 { animation: rise .6s ease-out .4s both; }
-    .c4 { animation: rise .6s ease-out .55s both; }
+    .c1 { animation: fadeIn .6s ease-out .1s both; }
+    .c2 { animation: fadeIn .6s ease-out .2s both; }
+    .c3 { animation: fadeIn .6s ease-out .3s both; }
+    .c4 { animation: fadeIn .6s ease-out .4s both; }
     .live { animation: pulse 1.6s ease-in-out infinite; }
     .sweep { animation: sweep 6s linear infinite; }
     .glowG { animation: borderGlowG 3s ease-in-out infinite; }

@@ -2,15 +2,15 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
     .sans { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-    @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
     @keyframes sweep { from { transform: translateX(-1600px); } to { transform: translateX(1600px); } }
     @keyframes borderGlow { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .85; } }
     
-    .c1 { animation: rise .7s ease-out .15s both; }
-    .c2 { animation: rise .7s ease-out .35s both; }
-    .c3 { animation: rise .7s ease-out .55s both; }
-    .c4 { animation: rise .7s ease-out .75s both; }
+    .c1 { animation: fadeIn .6s ease-out .15s both; }
+    .c2 { animation: fadeIn .6s ease-out .3s both; }
+    .c3 { animation: fadeIn .6s ease-out .45s both; }
+    .c4 { animation: fadeIn .6s ease-out .6s both; }
     .live { animation: pulse 1.6s ease-in-out infinite; }
     .sweep { animation: sweep 6s linear infinite; }
     .cardGlowG { animation: borderGlow 3.5s ease-in-out infinite; }
