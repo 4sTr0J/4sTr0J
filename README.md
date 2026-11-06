@@ -141,6 +141,18 @@ From solving complex <strong>CTF challenges on TryHackMe</strong> to architectin
   <img width="96%" src="https://raw.githubusercontent.com/4sTr0J/4sTr0J/output/github-contribution-grid-snake-dark.svg?v=2" alt="Contribution snake" />
 </p>
 
+<p align="center">
+  <a href="https://tryhackme.com/p/4sTr0J">
+    <img width="100%" src="./assets/thm-badges.svg" alt="TryHackMe 13 Earned Badges: Blue Teaming, Red Teaming, Streaks &amp; Foundations" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://tryhackme.com/p/4sTr0J">
+    <img src="https://tryhackme-badges.s3.amazonaws.com/4sTr0J.png" alt="TryHackMe Live Status Badge" />
+  </a>
+</p>
+
 <p align="center"><img width="100%" alt="Octocat moving through the security pipeline" src="./assets/pipeline-6.svg" /></p>
 
 <!-- ========================================================= -->

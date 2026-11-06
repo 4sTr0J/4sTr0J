@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-label="TryHackMe Verified Badges &amp; Milestones — Nadil Kularathne (4sTr0J)">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+    .sans { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
+    @keyframes sweep { from { transform: translateX(-1600px); } to { transform: translateX(1600px); } }
+    @keyframes borderGlowG { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
+    @keyframes borderGlowC { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
+    @keyframes borderGlowR { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .9; } }
+    
+    .c1 { animation: rise .6s ease-out .1s both; }
+    .c2 { animation: rise .6s ease-out .25s both; }
+    .c3 { animation: rise .6s ease-out .4s both; }
+    .c4 { animation: rise .6s ease-out .55s both; }
+    .live { animation: pulse 1.6s ease-in-out infinite; }
+    .sweep { animation: sweep 6s linear infinite; }
+    .glowG { animation: borderGlowG 3s ease-in-out infinite; }
+    .glowC { animation: borderGlowC 3s ease-in-out 1s infinite; }
+    .glowR { animation: borderGlowR 3s ease-in-out 1.5s infinite; }
+  </style>
+
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020508"/>
+      <stop offset="50%" stop-color="#050e14"/>
+      <stop offset="100%" stop-color="#03080e"/>
+    </linearGradient>
+
+    <!-- Scanline Sweep -->
+    <linearGradient id="sw" x1="0" x2="1">
+      <stop offset="0" stop-color="#00ff66" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00ff66" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#00ff66" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Matrix Background Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00ff66" stroke-opacity=".03"/>
+    </pattern>
+
+    <!-- Flame Gradients -->
+    <linearGradient id="flameRed" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="60%" stop-color="#ff5252"/>
+      <stop offset="100%" stop-color="#ffb74d"/>
+    </linearGradient>
+
+    <linearGradient id="flameGreen" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#00c853"/>
+      <stop offset="60%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#b9f6ca"/>
+    </linearGradient>
+
+    <linearGradient id="metasploitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <clipPath id="frame"><rect width="1600" height="1040" rx="32"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="1040" fill="url(#bg)"/>
+    <rect width="1600" height="1040" fill="url(#grid)"/>
+    <rect class="sweep" width="500" height="1040" fill="url(#sw)"/>
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <g class="c1 sans">
+      <!-- Terminal Tag -->
+      <text class="mono" x="70" y="70" font-size="16" fill="#00ff66" letter-spacing="5">// 0x05 — CREDENTIALS &amp; ACHIEVEMENTS // TRYHACKME RECON</text>
+      
+      <!-- Main Title -->
+      <text x="68" y="130" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">TryHackMe Badges &amp; Milestones</text>
+      
+      <!-- Subtitle -->
+      <text x="70" y="165" font-size="15" fill="#80a095">Verified offensive security, blue teaming, defensive forensics &amp; streak achievements</text>
+
+      <!-- Badge Counter HUD (Top Right) -->
+      <g transform="translate(1210 60)">
+        <rect width="320" height="85" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".5" stroke-width="1.5" class="glowG"/>
+        <circle cx="28" cy="42" r="6" fill="#00ff66" class="live"/>
+        <text class="mono" x="48" y="36" font-size="12" fill="#80a095" letter-spacing="2">TRYHACKME VERIFIED</text>
+        <text class="mono" x="48" y="65" font-size="26" font-weight="800" fill="#00ff66">13 <tspan fill="#4b6b60" font-size="18">/ 139</tspan> <tspan font-size="14" fill="#80a095" font-weight="600">BADGES</tspan></text>
+      </g>
+    </g>
+
+    <!-- =================================================================== -->
+    <!-- ROW 1 (y=200): LEARNING MILESTONES (4 of 4 Earned)                 -->
+    <!-- =================================================================== -->
+    <g class="c1 sans">
+      <text class="mono" x="70" y="215" font-size="13" font-weight="700" fill="#00ff66" letter-spacing="3">LEARNING MILESTONES</text>
+      <text class="mono" x="1530" y="215" text-anchor="end" font-size="12" fill="#4b6b60">4 OF 4 COMPLETED (100%)</text>
+      <line x1="70" y1="225" x2="1530" y2="225" stroke="#00ff66" stroke-opacity=".15" stroke-width="1"/>
+    </g>
+
+    <!-- 01: 30 Day Streak -->
+    <g class="c1" transform="translate(70 240)">
+      <rect width="350" height="115" rx="12" fill="#03080e" stroke="#ff3b5c" stroke-opacity=".35" stroke-width="1.4" class="glowR"/>
+      <!-- Emblem Base -->
+      <rect x="16" y="16" width="54" height="54" rx="10" fill="#ff3b5c" fill-opacity=".12" stroke="#ff3b5c" stroke-opacity=".4"/>
+      <!-- Red Flame Icon -->
+      <g transform="translate(43 43)">
+        <path d="M0 -15 C6 -6 12 2 8 10 C5 14 0 16 -3 16 C-10 16 -14 10 -10 2 C-9 -4 -4 -9 0 -15 Z" fill="url(#flameRed)"/>
+        <path d="M-1 -4 C3 0 5 4 3 8 C1 10 -2 11 -4 10 C-7 8 -7 3 -3 0 Z" fill="#fff" opacity=".8"/>
+      </g>
+      <!-- Green Checkmark Circle -->
+      <circle cx="62" cy="62" r="8" fill="#00ff66"/>
+      <path d="M59 62 L61 64 L65 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Content -->
+      <rect x="82" y="16" width="96" height="18" rx="4" fill="#ff3b5c" fill-opacity=".15"/>
+      <text class="mono" x="130" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#ff708b">COMMON · 10.9%</text>
+      <text class="sans" x="82" y="55" font-size="18" font-weight="700" fill="#ffffff">30 Day Streak</text>
+      <text class="sans" x="16" y="92" font-size="13" fill="#80a095">Hacking for 30 days solid</text>
+    </g>
+
+    <!-- 02: 7 Day Streak -->
+    <g class="c1" transform="translate(440 240)">
+      <rect width="350" height="115" rx="12" fill="#03080e" stroke="#00ff66" stroke-opacity=".35" stroke-width="1.4" class="glowG"/>
+      <rect x="16" y="16" width="54" height="54" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
+      <!-- Green Flame Icon -->
+      <g transform="translate(43 43)">
+        <path d="M0 -15 C6 -6 12 2 8 10 C5 14 0 16 -3 16 C-10 16 -14 10 -10 2 C-9 -4 -4 -9 0 -15 Z" fill="url(#flameGreen)"/>
+        <path d="M-1 -4 C3 0 5 4 3 8 C1 10 -2 11 -4 10 C-7 8 -7 3 -3 0 Z" fill="#fff" opacity=".8"/>
+      </g>
+      <circle cx="62" cy="62" r="8" fill="#00ff66"/>
+      <path d="M59 62 L61 64 L65 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="82" y="16" width="96" height="18" rx="4" fill="#00ff66" fill-opacity=".15"/>
+      <text class="mono" x="130" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#00ff66">COMMON · 23.9%</text>
+      <text class="sans" x="82" y="55" font-size="18" font-weight="700" fill="#ffffff">7 Day Streak</text>
+      <text class="sans" x="16" y="92" font-size="13" fill="#80a095">Achieving a 7 day hacking streak</text>
+    </g>
+
+    <!-- 03: 3 Day Streak -->
+    <g class="c1" transform="translate(810 240)">
+      <rect width="350" height="115" rx="12" fill="#03080e" stroke="#00ff66" stroke-opacity=".35" stroke-width="1.4" class="glowG"/>
+      <rect x="16" y="16" width="54" height="54" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
+      <!-- 3 Day Hex Flame Icon -->
+      <g transform="translate(43 43)">
+        <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="#00ff66" fill-opacity=".2" stroke="#00ff66" stroke-width="1.2"/>
+        <path d="M0 -10 C4 -4 8 2 5 7 C3 10 0 11 -2 11 C-7 11 -9 7 -7 2 Z" fill="#00ff66"/>
+      </g>
+      <circle cx="62" cy="62" r="8" fill="#00ff66"/>
+      <path d="M59 62 L61 64 L65 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="82" y="16" width="96" height="18" rx="4" fill="#00ff66" fill-opacity=".15"/>
+      <text class="mono" x="130" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#00ff66">COMMON · 38.9%</text>
+      <text class="sans" x="82" y="55" font-size="18" font-weight="700" fill="#ffffff">3 Day Streak</text>
+      <text class="sans" x="16" y="92" font-size="13" fill="#80a095">Achieving a 3 day hacking streak</text>
+    </g>
+
+    <!-- 04: First Four -->
+    <g class="c1" transform="translate(1180 240)">
+      <rect width="350" height="115" rx="12" fill="#03080e" stroke="#a855f7" stroke-opacity=".35" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="54" rx="10" fill="#a855f7" fill-opacity=".12" stroke="#a855f7" stroke-opacity=".4"/>
+      <!-- Bowling Strike Icon -->
+      <g transform="translate(43 43)">
+        <circle cx="5" cy="5" r="7" fill="#ff3b5c"/>
+        <line x1="-8" y1="8" x2="-4" y2="-12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-2" y1="8" x2="0" y2="-13" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="4" y1="8" x2="8" y2="-10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <circle cx="62" cy="62" r="8" fill="#00ff66"/>
+      <path d="M59 62 L61 64 L65 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="82" y="16" width="96" height="18" rx="4" fill="#a855f7" fill-opacity=".15"/>
+      <text class="mono" x="130" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#c084fc">COMMON · 32.2%</text>
+      <text class="sans" x="82" y="55" font-size="18" font-weight="700" fill="#ffffff">First Four</text>
+      <text class="sans" x="16" y="92" font-size="13" fill="#80a095">Completing four rooms in first week!</text>
+    </g>
+
+    <!-- =================================================================== -->
+    <!-- ROW 2 (y=385): RED TEAMING MILESTONES (3 of 3 Earned)               -->
+    <!-- =================================================================== -->
+    <g class="c2 sans">
+      <text class="mono" x="70" y="400" font-size="13" font-weight="700" fill="#ff3b5c" letter-spacing="3">RED TEAMING MILESTONES</text>
+      <text class="mono" x="1530" y="400" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
+      <line x1="70" y1="410" x2="1530" y2="410" stroke="#ff3b5c" stroke-opacity=".15" stroke-width="1"/>
+    </g>
+
+    <!-- 05: Hash Cracker -->
+    <g class="c2" transform="translate(70 425)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#a855f7" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#a855f7" fill-opacity=".15" stroke="#a855f7" stroke-opacity=".45"/>
+      <!-- Purple Kraken Hash Icon -->
+      <g transform="translate(45 43)">
+        <circle cx="0" cy="-2" r="9" fill="#a855f7"/>
+        <circle cx="-3" cy="-3" r="2" fill="#ffffff"/>
+        <circle cx="3" cy="-3" r="2" fill="#ffffff"/>
+        <path d="M-9 4 Q-12 12 -5 12 M0 6 Q0 13 4 12 M9 4 Q12 12 5 12" stroke="#a855f7" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#a855f7" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#c084fc">RARE · 4.5%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">Hash Cracker</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Cracking all those hashes (John the Ripper &amp; Hashcat)</text>
+    </g>
+
+    <!-- 06: Metasploitable -->
+    <g class="c2" transform="translate(565 425)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#2563eb" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#2563eb" fill-opacity=".15" stroke="#2563eb" stroke-opacity=".45"/>
+      <!-- Metasploit M Shield Icon -->
+      <g transform="translate(45 43)">
+        <path d="M-13 -13 L0 -5 L13 -13 V3 L0 13 L-13 3 Z" fill="none" stroke="url(#metasploitGrad)" stroke-width="2"/>
+        <path d="M-6 -2 L0 4 L6 -2" fill="none" stroke="#00e5ff" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#2563eb" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#60a5fa">RARE · 3.9%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">Metasploitable</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Contains the knowledge to exploit targets using Metasploit</text>
+    </g>
+
+    <!-- 07: Blue (EternalBlue) -->
+    <g class="c2" transform="translate(1060 425)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.4" class="glowC"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#00e5ff" fill-opacity=".15" stroke="#00e5ff" stroke-opacity=".45"/>
+      <!-- Exploding Windows Icon -->
+      <g transform="translate(45 43)">
+        <rect x="-11" y="-11" width="9" height="9" fill="#00e5ff"/>
+        <rect x="2" y="-11" width="9" height="9" fill="#00e5ff"/>
+        <rect x="-11" y="2" width="9" height="9" fill="#00e5ff"/>
+        <rect x="2" y="2" width="9" height="9" fill="#00e5ff"/>
+        <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#00e5ff" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#00e5ff">RARE · 9.6%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">Blue (MS17-010)</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Hacking into Windows domain targets via EternalBlue</text>
+    </g>
+
+    <!-- =================================================================== -->
+    <!-- ROW 3 (y=570): BLUE TEAMING MILESTONES (3 of 3 Earned)              -->
+    <!-- =================================================================== -->
+    <g class="c3 sans">
+      <text class="mono" x="70" y="585" font-size="13" font-weight="700" fill="#00e5ff" letter-spacing="3">BLUE TEAMING &amp; DEFENSE MILESTONES</text>
+      <text class="mono" x="1530" y="585" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
+      <line x1="70" y1="595" x2="1530" y2="595" stroke="#00e5ff" stroke-opacity=".15" stroke-width="1"/>
+    </g>
+
+    <!-- 08: 100% True Positive Rate -->
+    <g class="c3" transform="translate(70 610)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.4" class="glowC"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#00e5ff" fill-opacity=".15" stroke="#00e5ff" stroke-opacity=".45"/>
+      <!-- Radar Dish Icon -->
+      <g transform="translate(45 43)">
+        <path d="M-12 -6 Q0 -14 12 -6" stroke="#00e5ff" stroke-width="2" fill="none"/>
+        <path d="M-8 0 Q0 -6 8 0" stroke="#00e5ff" stroke-width="2" fill="none"/>
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#00e5ff" stroke-width="2"/>
+        <circle cx="0" cy="-6" r="3" fill="#00ff66"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#00e5ff" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#00e5ff">RARE · 5.8%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">100% True Positive Rate</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Achieving 100% true positive rate in cyber defense scenario</text>
+    </g>
+
+    <!-- 09: First Scenario Completed -->
+    <g class="c3" transform="translate(565 610)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#38bdf8" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#38bdf8" fill-opacity=".15" stroke="#38bdf8" stroke-opacity=".45"/>
+      <!-- Cyber Platform Icon -->
+      <g transform="translate(45 43)">
+        <polygon points="0,-12 12,-6 0,0 -12,-6" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+        <polygon points="0,-2 12,4 0,10 -12,4" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+        <circle cx="0" cy="-6" r="2.5" fill="#00ff66"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#38bdf8" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#38bdf8">RARE · 5.8%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">First Scenario Completed</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Full tactical scenario execution from triage to mitigation</text>
+    </g>
+
+    <!-- 10: First Alert Closed -->
+    <g class="c3" transform="translate(1060 610)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#06b6d4" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#06b6d4" fill-opacity=".15" stroke="#06b6d4" stroke-opacity=".45"/>
+      <!-- Magnifier SOC Alert Icon -->
+      <g transform="translate(45 43)">
+        <circle cx="-3" cy="-3" r="8" fill="none" stroke="#06b6d4" stroke-width="2"/>
+        <line x1="3" y1="3" x2="11" y2="11" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M-5 -3 L-3 -1 L1 -5" stroke="#00ff66" stroke-width="1.6" fill="none"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#06b6d4" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#22d3ee">RARE · 7.5%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">First Alert Closed</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Closing first live SOC incident &amp; telemetry investigation</text>
+    </g>
+
+    <!-- =================================================================== -->
+    <!-- ROW 4 (y=755): FOUNDATIONS & SPECIAL (3 of 3 Earned)                -->
+    <!-- =================================================================== -->
+    <g class="c4 sans">
+      <text class="mono" x="70" y="770" font-size="13" font-weight="700" fill="#eab308" letter-spacing="3">FOUNDATIONS &amp; SPECIAL OPERATIONS</text>
+      <text class="mono" x="1530" y="770" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
+      <line x1="70" y1="780" x2="1530" y2="780" stroke="#eab308" stroke-opacity=".15" stroke-width="1"/>
+    </g>
+
+    <!-- 11: cat linux.txt -->
+    <g class="c4" transform="translate(70 795)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#eab308" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#eab308" fill-opacity=".15" stroke="#eab308" stroke-opacity=".45"/>
+      <!-- Tux Linux Penguin Icon -->
+      <g transform="translate(45 43)">
+        <ellipse cx="0" cy="1" rx="9" ry="11" fill="#1e293b"/>
+        <ellipse cx="0" cy="2" rx="6" ry="8" fill="#ffffff"/>
+        <circle cx="-3" cy="-4" r="1.5" fill="#000000"/>
+        <circle cx="3" cy="-4" r="1.5" fill="#000000"/>
+        <polygon points="-2,-1 2,-1 0,2" fill="#f59e0b"/>
+        <ellipse cx="-5" cy="11" rx="3.5" ry="1.5" fill="#f59e0b"/>
+        <ellipse cx="5" cy="11" rx="3.5" ry="1.5" fill="#f59e0b"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="96" height="18" rx="4" fill="#eab308" fill-opacity=".2"/>
+      <text class="mono" x="136" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#fde047">COMMON · 20.1%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">cat linux.txt</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Being competent in Linux shell, CLI piping &amp; permissions</text>
+    </g>
+
+    <!-- 12: Advent of Cyber 2025 -->
+    <g class="c4" transform="translate(565 795)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#10b981" stroke-opacity=".4" stroke-width="1.4" class="glowG"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#10b981" fill-opacity=".15" stroke="#10b981" stroke-opacity=".45"/>
+      <!-- AoC Hacker Elf Icon -->
+      <g transform="translate(45 43)">
+        <polygon points="-10,-12 10,-12 6,4 -6,4" fill="#10b981"/>
+        <circle cx="0" cy="-12" r="3" fill="#ffffff"/>
+        <circle cx="0" cy="0" r="7" fill="#fbbf24"/>
+        <circle cx="-3" cy="-1" r="1.5" fill="#020508"/>
+        <circle cx="3" cy="-1" r="1.5" fill="#020508"/>
+        <path d="M-3 3 Q0 5 3 3" stroke="#020508" stroke-width="1" fill="none"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#10b981" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#34d399">RARE · 2.8%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">Advent of Cyber 2025</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Completing Advent of Cyber 2025 multi-stage CTF event</text>
+    </g>
+
+    <!-- 13: Session Held -->
+    <g class="c4" transform="translate(1060 795)">
+      <rect width="470" height="115" rx="12" fill="#03080e" stroke="#14b8a6" stroke-opacity=".4" stroke-width="1.4"/>
+      <rect x="18" y="16" width="54" height="54" rx="10" fill="#14b8a6" fill-opacity=".15" stroke="#14b8a6" stroke-opacity=".45"/>
+      <!-- Cyber Vault Chest Icon -->
+      <g transform="translate(45 43)">
+        <rect x="-11" y="-5" width="22" height="14" rx="2" fill="#0f766e" stroke="#14b8a6" stroke-width="1.8"/>
+        <path d="M-11 -5 C-11 -11 11 -11 11 -5 Z" fill="#14b8a6"/>
+        <circle cx="0" cy="2" r="2" fill="#ffffff"/>
+      </g>
+      <circle cx="64" cy="62" r="8" fill="#00ff66"/>
+      <path d="M61 62 L63 64 L67 60" stroke="#020508" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="88" y="16" width="80" height="18" rx="4" fill="#14b8a6" fill-opacity=".2"/>
+      <text class="mono" x="128" y="29" text-anchor="middle" font-size="10" font-weight="700" fill="#2dd4bf">RARE · 4.8%</text>
+      <text class="sans" x="88" y="55" font-size="20" font-weight="700" fill="#ffffff">Session Held</text>
+      <text class="sans" x="18" y="93" font-size="13" fill="#80a095">Completing 4 weekly missions in a row without interruption</text>
+    </g>
+
+    <!-- =================================================================== -->
+    <!-- FOOTER HUD BAR                                                      -->
+    <!-- =================================================================== -->
+    <g class="c4 sans" transform="translate(70 950)">
+      <rect width="1460" height="50" rx="10" fill="#03080e" stroke="#00ff66" stroke-opacity=".25" stroke-width="1"/>
+      <circle cx="25" cy="25" r="5" fill="#00ff66" class="live"/>
+      <text class="mono" x="45" y="30" font-size="12" fill="#80a095">TRYHACKME ID: <tspan fill="#00ff66" font-weight="700">4sTr0J</tspan> · STATUS: <tspan fill="#00ff66">ACTIVE CTF OPERATOR</tspan> · VERIFIED ROOMS COMPLETED</text>
+      <text class="mono" x="1435" y="30" text-anchor="end" font-size="12" fill="#00e5ff">tryhackme.com/p/4sTr0J →</text>
+    </g>
+
+    <!-- Outer Perimeter Neon Border -->
+    <rect x="1" y="1" width="1598" height="1038" rx="32" fill="none" stroke="#00ff66" stroke-opacity=".2" stroke-width="2"/>
+  </g>
+</svg>
