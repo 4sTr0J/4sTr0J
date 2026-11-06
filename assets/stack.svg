@@ -2,15 +2,10 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
     .sans { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
     @keyframes sweep { from { transform: translateX(-1600px); } to { transform: translateX(1600px); } }
     @keyframes borderGlow { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .85; } }
     
-    .c1 { animation: fadeIn .6s ease-out .15s both; }
-    .c2 { animation: fadeIn .6s ease-out .3s both; }
-    .c3 { animation: fadeIn .6s ease-out .45s both; }
-    .c4 { animation: fadeIn .6s ease-out .6s both; }
     .live { animation: pulse 1.6s ease-in-out infinite; }
     .sweep { animation: sweep 6s linear infinite; }
     .cardGlowG { animation: borderGlow 3.5s ease-in-out infinite; }
@@ -38,9 +33,9 @@
 
     <!-- Header Section -->
     <g class="sans">
-      <text class="mono c1" x="70" y="105" font-size="20" fill="#00ff66" letter-spacing="6">// 0x02 — WEAPONRY &amp; TOOLSET // PENTESTING ARSENAL</text>
-      <text class="c1" x="68" y="175" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Tools I defend, audit &amp; exploit with</text>
-      <g class="c1 mono" font-size="16" fill="#80a095">
+      <text class="mono" x="70" y="105" font-size="20" fill="#00ff66" letter-spacing="6">// 0x02 — WEAPONRY &amp; TOOLSET // PENTESTING ARSENAL</text>
+      <text x="68" y="175" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Tools I defend, audit &amp; exploit with</text>
+      <g class="mono" font-size="16" fill="#80a095">
         <circle cx="1290" cy="100" r="6" fill="#00ff66" class="live"/>
         <text x="1530" y="106" text-anchor="end">ARSENAL: 16 TOOLS ARMED</text>
       </g>
@@ -51,7 +46,7 @@
     <!-- =================================================================== -->
 
     <!-- CARD 01: Kali Linux -->
-    <g class="c1" transform="translate(70 220)">
+    <g transform="translate(70 220)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Kali Dragon Icon -->
@@ -67,7 +62,7 @@
     </g>
 
     <!-- CARD 02: Metasploit -->
-    <g class="c1" transform="translate(440 220)">
+    <g transform="translate(440 220)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Metasploit M Shield Icon -->
@@ -83,7 +78,7 @@
     </g>
 
     <!-- CARD 03: Burp Suite -->
-    <g class="c1" transform="translate(810 220)">
+    <g transform="translate(810 220)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#ff7b25" stroke-opacity=".45" stroke-width="1.5"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#ff7b25" fill-opacity=".12" stroke="#ff7b25" stroke-opacity=".4"/>
       <!-- Burp Suite Target / Proxy Icon -->
@@ -101,7 +96,7 @@
     </g>
 
     <!-- CARD 04: Nmap -->
-    <g class="c1" transform="translate(1180 220)">
+    <g transform="translate(1180 220)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Nmap Radar Sweep Icon -->
@@ -123,7 +118,7 @@
     <!-- =================================================================== -->
 
     <!-- CARD 05: Wireshark -->
-    <g class="c2" transform="translate(70 375)">
+    <g transform="translate(70 375)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Wireshark Shark Fin Icon -->
@@ -139,7 +134,7 @@
     </g>
 
     <!-- CARD 06: Hydra -->
-    <g class="c2" transform="translate(440 375)">
+    <g transform="translate(440 375)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#ff4d6d" stroke-opacity=".45" stroke-width="1.5"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#ff4d6d" fill-opacity=".12" stroke="#ff4d6d" stroke-opacity=".4"/>
       <!-- Hydra Icon -->
@@ -157,7 +152,7 @@
     </g>
 
     <!-- CARD 07: John the Ripper -->
-    <g class="c2" transform="translate(810 375)">
+    <g transform="translate(810 375)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- John the Ripper Lockbreaker Icon -->
@@ -175,7 +170,7 @@
     </g>
 
     <!-- CARD 08: Hashcat -->
-    <g class="c2" transform="translate(1180 375)">
+    <g transform="translate(1180 375)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Hashcat Cat Mask Icon -->
@@ -195,7 +190,7 @@
     <!-- =================================================================== -->
 
     <!-- CARD 09: Ghidra -->
-    <g class="c3" transform="translate(70 530)">
+    <g transform="translate(70 530)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#ff4d6d" stroke-opacity=".45" stroke-width="1.5"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#ff4d6d" fill-opacity=".12" stroke="#ff4d6d" stroke-opacity=".4"/>
       <!-- Ghidra SRE Disassembler Icon -->
@@ -211,7 +206,7 @@
     </g>
 
     <!-- CARD 10: Nessus -->
-    <g class="c3" transform="translate(440 530)">
+    <g transform="translate(440 530)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Nessus Vulnerability Crosshair Icon -->
@@ -227,7 +222,7 @@
     </g>
 
     <!-- CARD 11: Wazuh -->
-    <g class="c3" transform="translate(810 530)">
+    <g transform="translate(810 530)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Wazuh SIEM Shield Eye Icon -->
@@ -243,7 +238,7 @@
     </g>
 
     <!-- CARD 12: Suricata / Snort -->
-    <g class="c3" transform="translate(1180 530)">
+    <g transform="translate(1180 530)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Suricata / IDS Icon -->
@@ -263,7 +258,7 @@
     <!-- =================================================================== -->
 
     <!-- CARD 13: Python -->
-    <g class="c4" transform="translate(70 685)">
+    <g transform="translate(70 685)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Python Snake Icon -->
@@ -280,7 +275,7 @@
     </g>
 
     <!-- CARD 14: Docker -->
-    <g class="c4" transform="translate(440 685)">
+    <g transform="translate(440 685)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- Docker Containers Whale Icon -->
@@ -301,7 +296,7 @@
     </g>
 
     <!-- CARD 15: Linux / Bash -->
-    <g class="c4" transform="translate(810 685)">
+    <g transform="translate(810 685)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00ff66" stroke-opacity=".4" stroke-width="1.5" class="cardGlowG"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Linux / Bash Icon -->
@@ -318,7 +313,7 @@
     </g>
 
     <!-- CARD 16: CCNA / Cisco -->
-    <g class="c4" transform="translate(1180 685)">
+    <g transform="translate(1180 685)">
       <rect width="350" height="135" rx="14" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.5" class="cardGlowC"/>
       <rect x="18" y="24" width="52" height="52" rx="10" fill="#00e5ff" fill-opacity=".12" stroke="#00e5ff" stroke-opacity=".4"/>
       <!-- CCNA Routing Network Mesh Icon -->

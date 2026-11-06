@@ -2,17 +2,12 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
     .sans { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes pulse { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
     @keyframes sweep { from { transform: translateX(-1600px); } to { transform: translateX(1600px); } }
     @keyframes borderGlowG { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
     @keyframes borderGlowC { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .8; } }
     @keyframes borderGlowR { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .9; } }
     
-    .c1 { animation: fadeIn .6s ease-out .1s both; }
-    .c2 { animation: fadeIn .6s ease-out .2s both; }
-    .c3 { animation: fadeIn .6s ease-out .3s both; }
-    .c4 { animation: fadeIn .6s ease-out .4s both; }
     .live { animation: pulse 1.6s ease-in-out infinite; }
     .sweep { animation: sweep 6s linear infinite; }
     .glowG { animation: borderGlowG 3s ease-in-out infinite; }
@@ -74,7 +69,7 @@
     <!-- =================================================================== -->
     <!-- HEADER SECTION                                                      -->
     <!-- =================================================================== -->
-    <g class="c1 sans">
+    <g class="sans">
       <!-- Terminal Tag -->
       <text class="mono" x="70" y="70" font-size="16" fill="#00ff66" letter-spacing="5">// 0x05 — CREDENTIALS &amp; ACHIEVEMENTS // TRYHACKME RECON</text>
       
@@ -96,14 +91,14 @@
     <!-- =================================================================== -->
     <!-- ROW 1 (y=200): LEARNING MILESTONES (4 of 4 Earned)                 -->
     <!-- =================================================================== -->
-    <g class="c1 sans">
+    <g class="sans">
       <text class="mono" x="70" y="215" font-size="13" font-weight="700" fill="#00ff66" letter-spacing="3">LEARNING MILESTONES</text>
       <text class="mono" x="1530" y="215" text-anchor="end" font-size="12" fill="#4b6b60">4 OF 4 COMPLETED (100%)</text>
       <line x1="70" y1="225" x2="1530" y2="225" stroke="#00ff66" stroke-opacity=".15" stroke-width="1"/>
     </g>
 
     <!-- 01: 30 Day Streak -->
-    <g class="c1" transform="translate(70 240)">
+    <g transform="translate(70 240)">
       <rect width="350" height="115" rx="12" fill="#03080e" stroke="#ff3b5c" stroke-opacity=".35" stroke-width="1.4" class="glowR"/>
       <!-- Emblem Base -->
       <rect x="16" y="16" width="54" height="54" rx="10" fill="#ff3b5c" fill-opacity=".12" stroke="#ff3b5c" stroke-opacity=".4"/>
@@ -123,7 +118,7 @@
     </g>
 
     <!-- 02: 7 Day Streak -->
-    <g class="c1" transform="translate(440 240)">
+    <g transform="translate(440 240)">
       <rect width="350" height="115" rx="12" fill="#03080e" stroke="#00ff66" stroke-opacity=".35" stroke-width="1.4" class="glowG"/>
       <rect x="16" y="16" width="54" height="54" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- Green Flame Icon -->
@@ -140,7 +135,7 @@
     </g>
 
     <!-- 03: 3 Day Streak -->
-    <g class="c1" transform="translate(810 240)">
+    <g transform="translate(810 240)">
       <rect width="350" height="115" rx="12" fill="#03080e" stroke="#00ff66" stroke-opacity=".35" stroke-width="1.4" class="glowG"/>
       <rect x="16" y="16" width="54" height="54" rx="10" fill="#00ff66" fill-opacity=".12" stroke="#00ff66" stroke-opacity=".4"/>
       <!-- 3 Day Hex Flame Icon -->
@@ -157,7 +152,7 @@
     </g>
 
     <!-- 04: First Four -->
-    <g class="c1" transform="translate(1180 240)">
+    <g transform="translate(1180 240)">
       <rect width="350" height="115" rx="12" fill="#03080e" stroke="#a855f7" stroke-opacity=".35" stroke-width="1.4"/>
       <rect x="16" y="16" width="54" height="54" rx="10" fill="#a855f7" fill-opacity=".12" stroke="#a855f7" stroke-opacity=".4"/>
       <!-- Bowling Strike Icon -->
@@ -178,14 +173,14 @@
     <!-- =================================================================== -->
     <!-- ROW 2 (y=385): RED TEAMING MILESTONES (3 of 3 Earned)               -->
     <!-- =================================================================== -->
-    <g class="c2 sans">
+    <g class="sans">
       <text class="mono" x="70" y="400" font-size="13" font-weight="700" fill="#ff3b5c" letter-spacing="3">RED TEAMING MILESTONES</text>
       <text class="mono" x="1530" y="400" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
       <line x1="70" y1="410" x2="1530" y2="410" stroke="#ff3b5c" stroke-opacity=".15" stroke-width="1"/>
     </g>
 
     <!-- 05: Hash Cracker -->
-    <g class="c2" transform="translate(70 425)">
+    <g transform="translate(70 425)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#a855f7" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#a855f7" fill-opacity=".15" stroke="#a855f7" stroke-opacity=".45"/>
       <!-- Purple Kraken Hash Icon -->
@@ -204,7 +199,7 @@
     </g>
 
     <!-- 06: Metasploitable -->
-    <g class="c2" transform="translate(565 425)">
+    <g transform="translate(565 425)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#2563eb" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#2563eb" fill-opacity=".15" stroke="#2563eb" stroke-opacity=".45"/>
       <!-- Metasploit M Shield Icon -->
@@ -221,7 +216,7 @@
     </g>
 
     <!-- 07: Blue (EternalBlue) -->
-    <g class="c2" transform="translate(1060 425)">
+    <g transform="translate(1060 425)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.4" class="glowC"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#00e5ff" fill-opacity=".15" stroke="#00e5ff" stroke-opacity=".45"/>
       <!-- Exploding Windows Icon -->
@@ -243,14 +238,14 @@
     <!-- =================================================================== -->
     <!-- ROW 3 (y=570): BLUE TEAMING MILESTONES (3 of 3 Earned)              -->
     <!-- =================================================================== -->
-    <g class="c3 sans">
+    <g class="sans">
       <text class="mono" x="70" y="585" font-size="13" font-weight="700" fill="#00e5ff" letter-spacing="3">BLUE TEAMING &amp; DEFENSE MILESTONES</text>
       <text class="mono" x="1530" y="585" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
       <line x1="70" y1="595" x2="1530" y2="595" stroke="#00e5ff" stroke-opacity=".15" stroke-width="1"/>
     </g>
 
     <!-- 08: 100% True Positive Rate -->
-    <g class="c3" transform="translate(70 610)">
+    <g transform="translate(70 610)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#00e5ff" stroke-opacity=".4" stroke-width="1.4" class="glowC"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#00e5ff" fill-opacity=".15" stroke="#00e5ff" stroke-opacity=".45"/>
       <!-- Radar Dish Icon -->
@@ -269,7 +264,7 @@
     </g>
 
     <!-- 09: First Scenario Completed -->
-    <g class="c3" transform="translate(565 610)">
+    <g transform="translate(565 610)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#38bdf8" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#38bdf8" fill-opacity=".15" stroke="#38bdf8" stroke-opacity=".45"/>
       <!-- Cyber Platform Icon -->
@@ -287,7 +282,7 @@
     </g>
 
     <!-- 10: First Alert Closed -->
-    <g class="c3" transform="translate(1060 610)">
+    <g transform="translate(1060 610)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#06b6d4" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#06b6d4" fill-opacity=".15" stroke="#06b6d4" stroke-opacity=".45"/>
       <!-- Magnifier SOC Alert Icon -->
@@ -307,14 +302,14 @@
     <!-- =================================================================== -->
     <!-- ROW 4 (y=755): FOUNDATIONS & SPECIAL (3 of 3 Earned)                -->
     <!-- =================================================================== -->
-    <g class="c4 sans">
+    <g class="sans">
       <text class="mono" x="70" y="770" font-size="13" font-weight="700" fill="#eab308" letter-spacing="3">FOUNDATIONS &amp; SPECIAL OPERATIONS</text>
       <text class="mono" x="1530" y="770" text-anchor="end" font-size="12" fill="#4b6b60">3 OF 3 COMPLETED (100%)</text>
       <line x1="70" y1="780" x2="1530" y2="780" stroke="#eab308" stroke-opacity=".15" stroke-width="1"/>
     </g>
 
     <!-- 11: cat linux.txt -->
-    <g class="c4" transform="translate(70 795)">
+    <g transform="translate(70 795)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#eab308" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#eab308" fill-opacity=".15" stroke="#eab308" stroke-opacity=".45"/>
       <!-- Tux Linux Penguin Icon -->
@@ -336,7 +331,7 @@
     </g>
 
     <!-- 12: Advent of Cyber 2025 -->
-    <g class="c4" transform="translate(565 795)">
+    <g transform="translate(565 795)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#10b981" stroke-opacity=".4" stroke-width="1.4" class="glowG"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#10b981" fill-opacity=".15" stroke="#10b981" stroke-opacity=".45"/>
       <!-- AoC Hacker Elf Icon -->
@@ -357,7 +352,7 @@
     </g>
 
     <!-- 13: Session Held -->
-    <g class="c4" transform="translate(1060 795)">
+    <g transform="translate(1060 795)">
       <rect width="470" height="115" rx="12" fill="#03080e" stroke="#14b8a6" stroke-opacity=".4" stroke-width="1.4"/>
       <rect x="18" y="16" width="54" height="54" rx="10" fill="#14b8a6" fill-opacity=".15" stroke="#14b8a6" stroke-opacity=".45"/>
       <!-- Cyber Vault Chest Icon -->
@@ -377,7 +372,7 @@
     <!-- =================================================================== -->
     <!-- FOOTER HUD BAR                                                      -->
     <!-- =================================================================== -->
-    <g class="c4 sans" transform="translate(70 950)">
+    <g class="sans" transform="translate(70 950)">
       <rect width="1460" height="50" rx="10" fill="#03080e" stroke="#00ff66" stroke-opacity=".25" stroke-width="1"/>
       <circle cx="25" cy="25" r="5" fill="#00ff66" class="live"/>
       <text class="mono" x="45" y="30" font-size="12" fill="#80a095">TRYHACKME ID: <tspan fill="#00ff66" font-weight="700">4sTr0J</tspan> · STATUS: <tspan fill="#00ff66">ACTIVE CTF OPERATOR</tspan> · VERIFIED ROOMS COMPLETED</text>
