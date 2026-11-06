@@ -147,12 +147,6 @@ From solving complex <strong>CTF challenges on TryHackMe</strong> to architectin
   </a>
 </p>
 
-<p align="center">
-  <a href="https://tryhackme.com/p/4sTr0J">
-    <img src="https://tryhackme-badges.s3.amazonaws.com/4sTr0J.png" alt="TryHackMe Live Status Badge" />
-  </a>
-</p>
-
 <p align="center"><img width="100%" alt="Octocat moving through the security pipeline" src="./assets/pipeline-6.svg" /></p>
 
 <!-- ========================================================= -->
